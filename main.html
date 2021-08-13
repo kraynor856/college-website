@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>unique walls</title>
+    <link rel="icon" href="images/another.png">
+    <link rel="script" href="dark_mode.js">
+    <link rel="stylesheet" href="site.css">
+
+<script>
+ function inactivityTime() {
+        var time;
+        
+        // events
+        window.onload = resetTime;
+        window.onclick = resetTime;
+        window.onkeypress = resetTime;
+        window.ontouchstart = resetTime;
+        window.onmousemove = resetTime;
+        window.onmousedown = resetTime;
+        window.addEventListener('scroll', resetTime, true);
+
+        function if_user_inactive() {
+            // do our task here
+           document.getElementById("darkmodeicon").style.visibility ="hidden";
+           document.getElementById("nav").style.visibility ="hidden";
+          
+
+        }
+
+        function resetTime() {
+            clearTimeout(time);
+            document.getElementById("darkmodeicon").style.visibility ="unset";
+            document.getElementById("nav").style.visibility ="unset";
+            time = setTimeout(if_user_inactive, 1000 * 10); // 10 seconds
+        }
+
+    }
+
+    // run the function
+    inactivityTime(); 
+ 
+
+
+function darkmode() {
+    var element = document.body;
+    element.classList.toggle("darkmode");
+}
+
+
+</script>
+
+
+
+</head>
+
+<body onload = "checkfordarkmode()">
+    <div class="container">
+        <header>
+            <nav>
+                <a href="" class="hide-desktop">
+                    <img src="Images/iconfordropdown.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="nv1"><a href="#image1">Products</a></li>
+                    <li id="nv1"><a href="#aboutus">About</a></li>
+                    <li id="nv1"><a href="#contact">Contact</a></li>
+                    <li id="nv1"><a href="main.html">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <h1 class="main-title"> Welcome to Unique Walls! </h1>
+            <p class="subhead">Scroll down for more!</p>
+            <a href="https://unique-walls.myshopify.com"> <img  src="images/another.png" alt="scroll down" class="" id="Logo"></a>
+        </section>
+    </div>
+  
+
+
+
+    
+
+    <div class="our-products">
+      <div class="container">
+        <h1>Our Products </h1>
+        <ul>
+          <li >
+            <a href="https://unique-walls.myshopify.com/products/copy-of-adidas-inspired-xl-trainer-storage-box-holds-6no-pairs-of-trainers"> <img src="images/box2.jpg" class="image1" id="image1" alt=""> </a>
+          </li>
+
+          <li class="image2">
+            <a href="https://unique-walls.myshopify.com/products/adidas-inspired-xl-trainer-storage-box-holds-12no-pairs-of-trainers">  <img src="images/box5.jpg" class="image2" alt=""> </a>
+           
+          </li>
+          <li>
+            <a href="https://unique-walls.myshopify.com/products/adidas-henry-poole-inspired-xl-trainer-storage-box-holds-24no-pairs-of-trainers"> <img src="images/box7.jpg" class="image3" alt=""> </a>
+          </li>
+          <li>
+            <li >
+            <a href="https://unique-walls.myshopify.com/products/copy-of-adidas-inspired-xl-trainer-storage-box-holds-6no-pairs-of-trainers"> <img src="images/box3.jpg"  class="image1" id="image1" alt=""> </a>
+
+             
+  
+            </li>
+  
+            <li class="image2">
+              <a href="https://unique-walls.myshopify.com/products/louboutin-inspired-xl-trainer-storage-box-holds-12no-pairs-of-trainers">  <img src="images/box99..jpg" class="image2" alt=""> </a>
+              
+            </li>
+            <li>
+              <a href="https://unique-walls.myshopify.com/products/adidas-inspired-xl-trainer-storage-box-holds-24no-pairs-of-trainers-1"> <img src="images/spare4.jpg" class="image3" alt=""> </a>
+            </li>
+          </ul>
+        
+        <button class="button" id="button"><a href="https://unique-walls.myshopify.com/"  style="text-decoration:none; color: black;">Online shop</a></button>
+      </div>
+    </div>
+
+
+
+    <div class="main-text">
+      <div class="container">
+        <ul>
+          <li>
+            <h1 class="about-us" id="aboutus">About us </h1>
+            <p> I first started drawing about 15years ago when my children first asked me draw a picture of 'The Lion King' for them. I've never considered myself as an artist before but do have a great eye for detail. So, I gave it a go and was astounded by how good it was.... even if I do say so myself! As you can imagine, the kids soon asked me to draw anything and everything. Then came the question... "Can you draw a picture on my bedroom wall?".</p>
+          </li>
+          <li>
+      </div>
+    </div>
+
+<div class="contitle">
+  <div class="container">
+    <h1 id="contact">Contact us!</h1>
+  </div>
+</div>
+
+<div class="map">
+  <div class="contianer">
+    <ul>
+      <li>
+        <div id="wrapper" style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:500px;">
+          <div id="canvasfor-googlemap" style="height:100%; width:100%;max-width:100%;"><iframe
+              style="height:100%;width:100%;border:0;" frameborder="0"
+              src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20%20Nottingham+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed""></iframe>
+          </div><a class="googlemap-html" href="https://dedicatedhosting.pro" id="enable-mapdata">here</a>
+          <style>
+            #canvasfor-googlemap img {
+              max-width: 1034px !important;
+              background: none !important;
+              font-size: inherit;
+              font-weight: inherit;
+
+            }
+          </style>
+      </li>
+      <li class="con2" >
+        <h1>Our infomation</h1>             
+        <P>07977 923982</P>
+        <P>uniquewalls@hotmail.co.uk</P>
+        <P>United Kingdom </P>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="darkmodeicon">
+    <img src ="images/another.png" id="darkmodeicon" onclick="darkmode()"></img>
+</div>
+<footer>
+  <div class="footer-container">
+      <div class="container">
+          <a href="#">
+              <img src="images/another.png" class="logo" alt="logo">
+          </a>
+          <p class="address">Site made by kyle<br>raynor</p>
+          <ul class="footer-links">
+              <li class="twitter">
+                <a href="https://twitter.com/JayUniquewalls"><img src="images/iconfinder_1_Twitter3_colored_svg_5296516.svg"></a>
+              </li>
+              <li class="insta">
+                <a href="https://www.instagram.com/unique_walls/"><img src="images/iconfinder_1_Instagram_colored_svg_1_5296765.svg"></a>
+              </li>
+              <li class="tik-tok">
+                <a href="https://www.tiktok.com/@uniquewalls2020?lang=en"><img src="images/tik-tok.svg" class="tiktokimg"></a>
+              </li>
+              <li class="tik-tok">
+                <a href="https://www.facebook.com/uniquewallsuk"><img src="images/facebook-svgrepo-com.svg" class="tiktokimg"></a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</footer>
+
+
+
+
+<script>
+
+
+
+var menu = document.getElementById("menu");
+var nav = document.getElementById("nav");
+var exit = document.getElementById("exit");
+
+
+menu.addEventListener('click', function(e) {
+   nav.classList.toggle('hide-mobile');
+   menuisopen = true;
+   e.preventDefault();
+  
+});
+
+nav.addEventListener('click', function(e) {
+ if(menuisopen == true){
+  nav.classList.toggle('hide-mobile');
+ }
+});
+
+</script>
+
+
+
+
+</body>
+
+</html>
